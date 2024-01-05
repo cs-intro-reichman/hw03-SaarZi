@@ -12,6 +12,14 @@ public class LowerCase {
      */
     public static String lowerCase(String s) {
         // Replace the following statement with your code
-        return s.toLowerCase();
+        String result = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= 64 && s.charAt(i) <= 90) {
+                result += (char) (s.charAt(i) + 32);
+            } else {
+                result += s.charAt(i);
+            }
+        }
+        return result;
     }
 }
