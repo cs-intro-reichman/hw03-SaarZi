@@ -14,7 +14,7 @@ public class LowerCase {
         // Replace the following statement with your code
         String result = "";
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) >= 64 && s.charAt(i) <= 90) {
+            if (s.charAt(i) >= 65 && s.charAt(i) <= 90) {
                 result += (char) (s.charAt(i) + 32);
             } else {
                 result += s.charAt(i);
