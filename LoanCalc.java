@@ -56,7 +56,7 @@ public class LoanCalc {
     public static double bruteForceSolver(double loan, double rate, int n, double epsilon) {
         iterationCounter = 0;
         double balance = loan;
-        double increment = 0.0001;
+        double increment = 0.001;
         double g = loan / n;
         while (balance > epsilon) {
             balance = endBalance(loan, rate, n, g);
